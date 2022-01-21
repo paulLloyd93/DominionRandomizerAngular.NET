@@ -1,0 +1,14 @@
+<h3>Sets</h3>
+<form (ngSubmit)="onSubmit()" #paramsForm="ngForm">
+Dominion <input type="checkbox" (change)="dominion=!dominion">
+Intrigue <input type="checkbox" (change)="intrigue=!intrigue">
+Prosperity <input type="checkbox" (change)="prosperity=!prosperity">
+<h3>Options</h3>
+Allow Attacks <input type="checkbox" (change)="allowAttacks=!allowAttacks">
+Require Draw +2 or More <input type="checkbox" (change)="requireDraw=!requireDraw">
+Require extra Buy <input type="checkbox" (change)="requireBuy=!requireBuy">
+Require +2 Actions <input type="checkbox" (change)="requireActions=!requireActions">
+Require Gain Card <input type="checkbox" (change)="requireGain=!requireGain">
+Require Trashing <input type="checkbox" (change)="requireTrash=!requireTrash">
+<button type="submit">Randomize</button>
+</form>
